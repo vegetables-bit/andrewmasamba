@@ -126,8 +126,16 @@ body {
     padding-bottom: 15px;
 }
 
+#hero h2 {
+    color: blue;
+}
+
 #hero h1 {
     color: #088178;
+}
+
+#hero h1 .p {
+    color: green;
 }
 
 #hero button {
@@ -140,27 +148,14 @@ body {
     font-weight: 700;
     font-size: 15px;
 }
-
-
 #features {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     height: auto;
     border-radius: 5px;
-}
-#features .fe-box {
-    width: 200px;
-    height: auto;
-    text-align: center;
-    box-shadow: 20px 20px 34px rgba(8, 8, 8, 0);
-    padding: 0px 1px;
-    border: 1px solid #61eb76;
-    border-radius: 2px;
-    margin: 10px 0;
-    flex-direction: column;
 }
 
 #features .fe-box:hover {
@@ -194,9 +189,8 @@ body {
 #product1 .masa-container{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding-top: 20px;
     flex-wrap: wrap;
-    display:
 }
 
 #product1 .masa{
