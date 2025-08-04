@@ -135,6 +135,11 @@ body {
     left: 20px;
 }
 
+#mobile {
+    display: none;
+    align-items: center;
+}
+
 #hero {
     background-image: url("image/masa/mary.jpg");
     height: 80vh;
@@ -174,52 +179,64 @@ body {
     font-weight: 700;
     font-size: 15px;
 }
-#features {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: auto;
-    border-radius: 5px;
-    flex-direction: row;
+
+#product2 {
+    text-align: center;
 }
 
-#features .fe-box {
+#product2 .masa-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product2 .masa{
     width: 15%;
-    min-width: 2px;
-    align-items: center;
-    padding: 3% 15px;
-    border-radius: 2px;
+    min-width: 20px;
+    padding: 0% 15px;
+    border: 3px solid #cce7d0;
+    border-radius: 25px;
     cursor: pointer;
-    border: 2px solid #222;
     box-shadow: 20px 20px 30px rgb(0 ,0 ,0, 0.02);
-    margin: 1px 0;
+    margin: 15px 0;
     transition: 0.2s ease;
 }
 
-#features .fe-box:hover {
-    box-shadow: 2px 2px 4px rgba(49, 48, 48, 0);
+#product2 .masa:hover{
+    box-shadow: 20px 20px 30px rgb(0 ,0 ,0, 0.08);
 }
 
-#features .fe-box image{
-    width: 15%;
-    margin-bottom: 6px;
-}
-#features .fe-box h6{
-    padding: 9px 8px 6px 8px;
-    background-color: #ecdede;
-    line-height: 1;
-    border-radius: 7px;
-    display:inline-block;
+#product2 .masa img{
+     width: 100%;
+     border-radius: 20px;
 }
 
-#features .fe-box:nth-child(2) h6 {
-    background-color: #815d81;
+#product2 .masa .des{
+    text-align: start;
+    padding: 10px 0;
 }
 
-#features .fe-box:nth-child(3) h6 {
-    background-color: #89dcf5;
+#product2 .masa .des span{
+    color: #222;
+    font-size: 12px;
+}
+
+#product2 .masa .des h4{
+    padding-top: 7px;
+    color: #222;
+}
+
+#product2 .masa .des i{
+    font-size: 14px;
+    color: rgb(243, 181, 25);
+}
+
+#product2 .masa .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
 }
 
 #product1 {
@@ -366,7 +383,15 @@ body {
     font-weight: 1000;
 }
 
-#sm-banner .banner-box:hover{
+#sm-banner .banner-box:hover {
+    color: #e9e9ec;
+    background-color: #014d0c;
+    border: 1px solid #81081c;
+    border-radius: 60px;
+}
+
+
+#sm-banner .banner-box:hover button{
     color: #e9e9ec;
     background-color: #014d0c;
     border: 1px solid #088178;
@@ -379,11 +404,11 @@ body {
     padding: 0 80px 60px;
 }
 
-#banner .banner-box {
+#banner3 .banner-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("image/......");
+    background-image: url("image/N/t1c.jpg");
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -392,12 +417,12 @@ body {
     margin-bottom: 20px;
 }
 
-#banner .banner-box2 {
-    background-image: url("image/.....");
+#banner3 .banner-box2 {
+    background-image: url("image/N/t7.jpg");
 }
 
-#banner .banner-box3 {
-    background-image: url("image/.....");
+#banner3 .banner-box3 {
+    background-image: url("image/N/t4.jpg");
 }
 
 #banner3 h2 {
@@ -417,7 +442,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("image/....");
+    background-image: url("image/N/mn.jpg");
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42
@@ -441,18 +466,18 @@ body {
 
 #newsletter input {
     height: 3.12srem;
-    padding: 0 1.25em;
-    font-size: 14px;
-    width: 100px;
-    border: 1px solid blue;
-    border-radius: 4px;
+    padding: 10px 1.25em;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid rgb(240, 171, 177);
+    border-radius: 8px;
     outline: none;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 
 #newsletter button {
-    background-color: #088178;
+    background-color: #1e05aa;
     color: #fff;
     white-space: nowrap;
     border-top-left-radius: 0;
@@ -525,6 +550,9 @@ footer .copyright {
 }
 
 @media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
     #navbar {
         display: flex;
         flex-direction: column;
@@ -538,6 +566,10 @@ footer .copyright {
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0);
         padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar .active {
+        right: 0px;
     }
 
     #navbar li {
@@ -554,4 +586,47 @@ footer .copyright {
         font-size: 24px;
         padding-left: 20px;
     }
+
+    #close {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-cart {
+        display: none;
+    }
+
+    #hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+     
+    }
+    
+    #product2 .masa-container {
+    justify-content: center;
+    }
+
+    #sm-banner .banner-box {
+    display: none;
+    }
+
+    #product1 .masa-container {
+    justify-content: center;
+    }
+
+    #product1 .masa {
+    margin: 15px;
+    }
+    #banner {
+    height: 20vh;
+    }
+    #sm-banner .banner-box {
+    min-width: 100%;
+    height: 30vh;
+    }
+
 }
