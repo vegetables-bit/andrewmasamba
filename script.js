@@ -2,14 +2,21 @@ const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
 
-if (bar) {
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+  }
+
+  if (bar) {
     bar.addEventListener('click', () =>{
-        nav.classList.add('active');
+        navnavLinks.classList.add('active');
     })
 }
 
 if (bar) {
     close.addEventListener('click', () =>{
-        nav.classList.remove('active');
+        navnavLinks.classList.remove('active');
     })
 }
+</script>

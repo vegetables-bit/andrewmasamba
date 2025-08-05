@@ -99,19 +99,48 @@ body {
     left: 0;
 }
 
-#navbar {
+/* Basic navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  background: none;
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hide hamburger on large screens */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+#navLinks {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#navbar li {
+#navLinks li {
     list-style: none;
     padding: 0 20px;
     position: relative;
 }
 
-#navbar li a {
+#navLinks li a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -119,13 +148,13 @@ body {
     transition: 0.3s ease;
 }
 
-#navbar li a :hover,
-#navbar li a.active {
+#navLinks li a :hover,
+#navLinks li a.active {
     color: #088178;
 }
 
-#navbar li a.active::after,
-#navbar li a :hover::after {
+#navLinks li a.active::after,
+#navLinks li a :hover::after {
     content: "";
     width: 30%;
     height: 2px;
@@ -627,7 +656,7 @@ footer .copyright {
     .section-p1 {
         padding: 40px 40px;
     }
-    #navbar {
+    #nav-links {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -642,8 +671,13 @@ footer .copyright {
         padding: 80px 0 0 10px;
         transition: 0.3s;
     }
-    #navbar .active {
-        right: 0px;
+
+    #nav-links.active {
+       display: flex;
+    }
+
+    #hamburger {
+    display: block;
     }
 
     #navbar li {
@@ -756,7 +790,7 @@ footer .copyright {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 0.3s;
 }
 
 #contact button:hover {
@@ -768,4 +802,10 @@ footer1 {
   padding: 20px;
   background-color: #f2f2f2; 
   color: #333;
+}
+
+#blog {
+    text-align: start;
+    padding: 20px;
+    background-color: #f2f2f2;
 }
