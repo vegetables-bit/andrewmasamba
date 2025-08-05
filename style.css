@@ -111,7 +111,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .nav-links li a {
@@ -126,16 +126,22 @@ body {
 }
 
 
-#navLinks {
+#nav-links {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: right;
+    justify-content: right;
+    margin-left: auto;
 }
 
-#navLinks li {
+#nav-links li {
     list-style: none;
-    padding: 0 20px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background: none;
+    padding: 20px 40px;
+    color: white;
 }
 
 #navLinks li a {
@@ -168,7 +174,6 @@ body {
 }
 
 #shop-banner1 {
-    background-image: url("image/new/w6.jpg");
     height: 40vh;
     width: 100%;
     background-position: top 40% right 10%;
@@ -208,7 +213,7 @@ body {
 }
 
 #hero p {
-    color: #f1f3f5;
+    color: #0e78e2;
 }
 
 #hero button {
@@ -743,22 +748,29 @@ footer .copyright {
 
 
 #contact {
-  background-color: #f4f4f4;
-  padding: 50px 20px;
-  text-align: center;
-  border-top: 2px solid #ccc;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #f4f6f8;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(11, 11, 235);
+  line-height: 1.8;
+  background-image: url("image/masa/mary1.jpg");
+
 }
 
 #contact h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #1e05aa;
 }
 
 #contact p {
   font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 30px;
+  color: #eaecea;
+  margin-bottom: 20px;
 }
 
 .contact-info p {
@@ -807,9 +819,15 @@ footer1 {
 }
 
 #blog {
-    text-align: start;
-    padding: 50px 50px;
-    background-color: #f2f2f2;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #f4f6f8;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #685f5f;
+  line-height: 1.8;
 }
 
 
