@@ -6,7 +6,7 @@ const nav = document.getElementById('navbar');
   function toggleMenu() {
     const navLinks = document.getElementById("navLinks");
     navLinks.classList.toggle("active");
-  }
+    }
 
   if (bar) {
     bar.addEventListener('click', () =>{
