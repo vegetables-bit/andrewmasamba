@@ -140,6 +140,21 @@ body {
     align-items: center;
 }
 
+#shop-banner1 {
+    background-image: url("image/new/w6.jpg");
+    height: 40vh;
+    width: 100%;
+    background-position: top 40% right 10%;
+    background-size: cover;
+    padding: 0 60px;
+    background-color: #0888;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
 #hero {
     background-image: url("image/masa/mary.jpg");
     height: 80vh;
@@ -178,6 +193,65 @@ body {
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
+}
+
+#product3 {
+    text-align: center;
+}
+
+#product3 .masa-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product3 .masa{
+    width: 15%;
+    min-width: 20px;
+    padding: 0% 15px;
+    border: 3px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0 ,0 ,0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+#product3 .masa:hover{
+    box-shadow: 20px 20px 30px rgb(0 ,0 ,0, 0.08);
+}
+
+#product3 .masa img{
+     width: 100%;
+     border-radius: 20px;
+}
+
+#product3 .masa .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product3 .masa .des span{
+    color: #222;
+    font-size: 12px;
+}
+
+#product3 .masa .des h4{
+    padding-top: 7px;
+    color: #222;
+}
+
+#product3 .masa .des i{
+    font-size: 14px;
+    color: rgb(243, 181, 25);
+}
+
+#product3 .masa .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
 }
 
 #product2 {
@@ -629,4 +703,69 @@ footer .copyright {
     height: 30vh;
     }
 
+}
+
+
+#contact {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 2px solid #ccc;
+}
+
+#contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 15px;
+  font-size: 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+#contact button {
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #007BFF; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #0056b3;
+}
+
+footer1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2; 
+  color: #333;
 }
