@@ -659,94 +659,6 @@ footer .copyright {
     text-align: center;
 }
 
-@media (max-width:799px) {
-    .section-p1 {
-        padding: 40px 40px;
-    }
-    #nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 300px;
-        background-color: #E3E6F3;
-        box-shadow: 0 40px 60px rgba(0, 0, 0);
-        padding: 80px 0 0 10px;
-        transition: 0.3s;
-    }
-
-    #nav-links.active {
-       display: flex;
-    }
-
-    #hamburger {
-    display: block;
-    }
-
-    #navbar li {
-        margin-bottom: 25px;
-    }
-
-    #mobile {
-        display: flex;
-        align-items: center;
-    }
-
-    #mobile i {
-        color: #2222;
-        font-size: 24px;
-        padding-left: 20px;
-    }
-
-    #close {
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        color: #222;
-        font-size: 24px;
-    }
-
-    #lg-cart {
-        display: none;
-    }
-
-    #hero {
-    height: 70vh;
-    padding: 0 80px;
-    background-position: top 30% right 30%;
-     
-    }
-    
-    #product2 .masa-container {
-    justify-content: center;
-    }
-
-    #sm-banner .banner-box {
-    display: none;
-    }
-
-    #product1 .masa-container {
-    justify-content: center;
-    }
-
-    #product1 .masa {
-    margin: 15px;
-    }
-    #banner {
-    height: 20vh;
-    }
-    #sm-banner .banner-box {
-    min-width: 100%;
-    height: 30vh;
-    }
-
-}
-
-
 #contact {
   max-width: 800px;
   margin: 40px auto;
@@ -881,4 +793,127 @@ footer1 {
   position: absolute;
   left: 0;
   font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #header {
+    padding: 15px 20px;
+    flex-direction: row;
+  }
+
+  #nav-links {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #fff;
+    height: 100vh;
+    width: 250px;
+    transition: 0.3s ease-in-out;
+    padding-top: 80px;
+  }
+
+  #nav-links.active {
+    right: 0;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  #hero {
+    height: 50vh;
+    padding: 0 20px;
+    text-align: center;
+    background-position: center;
+  }
+
+  #hero h1 {
+    font-size: 32px;
+  }
+
+  #hero h2 {
+    font-size: 24px;
+  }
+
+  #hero button {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+
+  /* Product Sections */
+  #product1 .masa,
+  #product2 .masa,
+  #product3 .masa {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  #sm-banner {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #sm-banner .banner-box,
+  #sm-banner .banner-box2 {
+    min-width: 100%;
+    height: 35vh;
+  }
+
+  #contact,
+  .about-us,
+  #blog {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* For small phones (≤ 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #hero {
+    height: 40vh;
+  }
+
+  #product1 .masa,
+  #product2 .masa,
+  #product3 .masa {
+    width: 100%;
+  }
+
+  #newsletter input {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+
+  #newsletter button {
+    width: 100%;
+  }
 }
